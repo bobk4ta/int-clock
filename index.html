@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🌐 World Clock</h1>
+      <div class="time-display">
+        <div id="local-time" class="time-box">
+          <h2>Local Time</h2>
+          <div id="time-local" class="time"></div>
+        </div>
+      </div>
+      <div class="time-zones">
+        <div id="bg-time" class="time-box">
+          <h2>Bulgaria 🇧🇬</h2>
+          <div id="time-bg" class="time"></div>
+        </div>
+        <div id="us-time" class="time-box">
+          <h2>USA 🇺🇸</h2>
+          <div id="time-us" class="time"></div>
+        </div>
+        <div id="uk-time" class="time-box">
+          <h2>UK 🇬🇧</h2>
+          <div id="time-uk" class="time"></div>
+        </div>
+        <div id="cn-time" class="time-box">
+          <h2>China 🇨🇳</h2>
+          <div id="time-cn" class="time"></div>
+        </div>
+        <div id="au-time" class="time-box">
+          <h2>Australia 🇦🇺</h2>
+          <div id="time-au" class="time"></div>
+        </div>
+      </div>
+      <div class="custom-time-zone">
+        <h2>Custom Time Zone</h2>
+        <select id="custom-time-zone-select">
+          <option value="0">UTC (Universal Time)</option>
+          <option value="-5">USA (EST)</option>
+          <option value="1">Central Europe</option>
+          <option value="3">Moscow</option>
+          <option value="8">China</option>
+          <option value="10">Australia</option>
+        </select>
+        <div id="custom-time" class="time-box">
+          <h2 id="custom-time-zone-title">Custom 🌍</h2>
+          <div id="time-custom" class="time"></div>
+        </div>
+      </div>
+      <button id="toggle-format" class="futuristic-button">
+        Toggle 12/24 Hour Format
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

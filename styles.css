@@ -1,0 +1,95 @@
+body {
+  font-family: "Orbitron", sans-serif;
+  background: radial-gradient(circle, #1a1a1a, #000000);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #06beb6, #48b1bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  text-align: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.time-display,
+.time-zones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.time-box {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #48b1bf;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(72, 177, 191, 0.8);
+  min-width: 180px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.time-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(72, 177, 191, 1);
+}
+
+.time {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  color: #06beb6;
+  text-shadow: 0 0 10px #48b1bf, 0 0 20px #06beb6;
+}
+
+select {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background: #333333;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+select:hover {
+  background: #06beb6;
+  color: #000000;
+}
+
+.futuristic-button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #06beb6, #48b1bf);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(72, 177, 191, 0.8);
+  transition: all 0.3s;
+}
+
+.futuristic-button:hover {
+  background: linear-gradient(45deg, #48b1bf, #06beb6);
+  box-shadow: 0 0 30px rgba(72, 177, 191, 1);
+  transform: scale(1.1);
+}
